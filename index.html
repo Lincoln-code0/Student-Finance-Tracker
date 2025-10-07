@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Finance Tracker</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1 id="main-title">Student Finance Tracker</h1>
+    <nav aria-label="Main navigation">
+      <a href="#dashboard">Dashboard</a>
+      <a href="#records">Records</a>
+      <a href="#about">About</a>
+      <a href="#settings">Settings</a>
+    </nav>
+  </header>
+  <main tabindex="-1" id="main-content">
+    <section id="dashboard" aria-labelledby="dashboard-title">
+      <h2 id="dashboard-title">Dashboard</h2>
+      <div id="stats"></div>
+    </section>
+    <section id="records" aria-labelledby="records-title">
+      <h2 id="records-title">Records</h2>
+      <div id="records-table"></div>
+      <button id="add-record-btn">Add Record</button>
+    </section>
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>An app to track finances and support student learning of UI development.</p>
+    </section>
+    <section id="settings" aria-labelledby="settings-title">
+      <h2 id="settings-title">Settings</h2>
+      <form id="settings-form">
+        <label for="base-currency">Base Currency:</label>
+        <select id="base-currency"></select>
+        <label for="rate-usd">USD Rate:</label>
+        <input type="text" id="rate-usd"/>
+        <label for="rate-eur">EUR Rate:</label>
+        <input type="text" id="rate-eur"/>
+        <button type="submit">Save Rates</button>
+      </form>
+    </section>
+    <section aria-live="polite" aria-atomic="true" id="live-status"></section>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
