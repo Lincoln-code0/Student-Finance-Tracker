@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f7fc;
+}
+header, main {
+  padding: 1em;
+}
+nav a {
+  margin-right: 1em;
+}
+@media (min-width: 640px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2em;
+  }
+}
+[aria-live] {
+  background: #e0ffe0;
+  padding: 0.5em;
+  border: 1px solid #69c869;
+}
